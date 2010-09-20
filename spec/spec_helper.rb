@@ -22,4 +22,7 @@ RSpec.configure do |config|
   # examples within a transaction, comment the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+
+  config.filter_run :focused => true
+  config.run_all_when_everything_filtered = true
 end
